@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from "react-redux"
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import getStore from "./store"
+import AppContainer from './transversal/AppContainer';
+import UserFinderView from "./views/UserFinderView"
+import UserDetailView from './views/UserDetailView';
+
+const store = getStore()
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+        <AppContainer>
+          <Routes>
+            <Route path="/" element={<UserFinderView />} />
+            <Route path="/user/:userLogin" element={<UserDetailView />} />
+          </Routes>
+        </AppContainer>
+      </BrowserRouter>
+    </Provider>
+
   );
 }
 

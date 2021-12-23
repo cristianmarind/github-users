@@ -11,3 +11,72 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.appContainer {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("https://www.publicdomainpictures.net/pictures/40000/nahled/dark-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.userCardSummary {
+  background-image: url("https://www.publicdomainpictures.net/pictures/120000/nahled/light-green-texture-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar {
+  width: 4em;
+  border: solid;
+  border-radius: 50%;
+}
+.avatar img {
+  border-radius: 50%
+}
+
+
+.font-size-1-rem{
+  font-size: 1rem  !important;
+}
+.font-size-larger{
+  font-size: larger;
+}
+.font-size-large{
+  font-size: large;
+}
+.font-size-medium{
+  font-size: medium;
+}
+.font-size-small{
+  font-size: small;
+}
+.font-size-smaller{
+  font-size: smaller;
+}
+.font-size-x-large{
+  font-size: larger;
+}
+.font-size-x-small{
+  font-size: x-small;
+}
+.font-size-xx-large{
+  font-size: xx-large;
+}
+.font-size-xxx-large{
+  font-size: xxx-large;
+}
+.font-size-xx-small{
+  font-size: xx-small;
+}
+
+.font-weight-100{
+  font-weight: 100;
+}
